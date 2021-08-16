@@ -1,3 +1,5 @@
+using System;
+
 namespace ModalApplication
 {
     public interface IModalApp
@@ -5,12 +7,16 @@ namespace ModalApplication
         void Start(int initialMode);
         void End();
 
+    }
+
+    public interface IFsmApp : IModalApp
+    {
         bool IsRunning { get; }
     }
 
     public interface ILoopingApp : IModalApp
     {
-        bool Loop(float frameSecs); // returns true is still running
+        bool Loop(float frameSecs); // returns true if still running
     }
 
 
