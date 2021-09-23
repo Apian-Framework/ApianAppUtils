@@ -201,7 +201,7 @@ namespace ModalApplication
 			_PerformTransition(); // most of the time does nothing
 
 			// Now - whatever is current, call its loop
-			((ILoopMode)CurrentMode()).Loop(frameSecs);
+			((ILoopMode)CurrentMode())?.Loop(frameSecs);
 
 			// If nothing on stack - we're done
 			return _modeDataStack.Count > 0;
