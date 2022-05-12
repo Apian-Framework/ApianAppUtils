@@ -61,6 +61,8 @@ namespace ModalApplication
 		}
 
 		// public API
+		public int ModeIdForName(string name) =>  _factory.ModeIdForName(name);
+
 		public virtual void Start(int startModeId, object startParam = null) {
 			_nextOpData = new OpData(ModeOp.Push, startModeId, startParam);
 		}
