@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="$(UniLogSource)\src\UniLog\UniLog.csproj" />
+    <ProjectReference Include="$(UniLogSource)src\UniLog\UniLog.csproj" />
   </ItemGroup>
 
 </Project>
